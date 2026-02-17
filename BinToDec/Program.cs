@@ -4,12 +4,12 @@ using System.Text.RegularExpressions;
 var nDecNum = 0;
 var nBinPower = 1;
 var nMaxBinaryLen = Math.Truncate(Math.Log2(uint.MaxValue));
-var oRegEx = new Regex("[0-1]");
+var oRegEx = new Regex("^[0-1]+$");
 Console.WriteLine("Input a binary number");
 var strLine = Console.ReadLine();
 var nStrLen = strLine.Length;
-var nMatches = oRegEx.Count(strLine);
-var bRightString = (nStrLen <= nMaxBinaryLen) && (nStrLen == nMatches);
+var bIsMatch = oRegEx.IsMatch(strLine);
+var bRightString = (nStrLen <= nMaxBinaryLen) && (bIsMatch);
 if(!bRightString)
 {
     Console.WriteLine("Wrong binary number format!!!");
