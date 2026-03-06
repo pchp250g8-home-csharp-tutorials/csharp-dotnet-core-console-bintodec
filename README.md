@@ -1,5 +1,5 @@
 BinToDec. C# Tutorials. Simple Input/Output. Strings. Algorithms. DotNet Core Platform. Console Application. 
-A console application in the C++ programming language. 
+A console application in the C# programming language. 
 The program does the following:
   1. Asks the user to enter a string.
   2. Checks whether the entered string is valid. It must be less than 32 characters long and contain only the numbers 0 and 1.
