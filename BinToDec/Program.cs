@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Text.RegularExpressions;
-
+const uint MAX_INT = uint.MaxValue;
 var nDecNum = 0;
 var nBinPower = 1;
-var nMaxBinaryLen = Math.Truncate(Math.Log2(uint.MaxValue));
+var nMaxBinaryLen = Math.Truncate(Math.Log2(MAX_INT));
 var oRegEx = new Regex("^[0-1]+$");
 Console.WriteLine("Input a binary number");
 var strLine = Console.ReadLine();
